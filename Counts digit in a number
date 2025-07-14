@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() 
+{
+int num, count = 0;
+printf("Enter a positive integer: ");
+scanf("%d", &num);
+if (num < 1 || num > 10000000) {
+printf("Invalid input. Enter number between 1 and 10000000.\n");
+return 0;
+}
+int temp = num;
+while (temp != 0) {
+temp = temp / 10;
+count++;
+}
+printf("The count of the given integer is: %d\n", count);
+return 0;
+}
