@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main() 
+{
+int size;
+int even_count = 0, odd_count = 0;
+printf("Enter size of the array: ");
+scanf("%d", &size);
+int arr[size];
+printf("Enter %d elements: ", size);
+for (int i = 0; i < size; i++) {
+scanf("%d", &arr[i]);
+if (arr[i] % 2 == 0) {
+even_count++;
+} else 
+{
+odd_count++;
+}
+}
+if (even_count == size) {
+printf("Even\n");
+} 
+else if (odd_count == size) 
+{
+printf("Odd\n");
+} else 
+{
+printf("Mixed\n");
+}
+return 0;
+}
